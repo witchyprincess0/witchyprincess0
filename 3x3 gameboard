@@ -1,0 +1,23 @@
+Create a 3x3 game board like a tic-tac-toe.
+
+grid_length = int(input('what size game board do you want to draw?'))
+
+def print_row(n):
+  for item in range(n):
+    print(' ---', end =''),
+  print('')
+  for item in range(n+1):
+    print('|', end = '   ')
+  print('')
+
+def bottom_row(n):
+  for item in range(n):
+    print(' ---', end =''),
+
+def print_grid(n):
+  for item in range(n):
+    print_row(n)
+  
+  bottom_row(n)
+
+print_grid(grid_length)
